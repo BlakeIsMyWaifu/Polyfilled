@@ -1,0 +1,30 @@
+{
+  "name": "blog",
+  "author": "Joel Dohm-Karatjas",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "yarn run open-browser && astro dev",
+    "build": "astro check && tsc --noEmit && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "open-browser": "start http://localhost:3000"
+  },
+  "dependencies": {
+    "@astrojs/react": "^1.2.0",
+    "astro": "^1.4.7",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.4",
+    "@types/react": "^18.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-plugin-astro": "^0.20.0",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "typescript": "^4.8.4"
+  }
+}
