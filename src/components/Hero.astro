@@ -1,0 +1,36 @@
+---
+import avatarSVG from '/avatar.svg'
+---
+
+<div class='container'>
+	<div class='text'>
+		<h1>Polyfilled</h1>
+		<p>
+			Love programming? This is the place for you!
+			I write about what tech is currently interesting to me.
+			This is mainly revolving around Typescript, React or general web dev.
+		</p>
+	</div>
+	<img src={avatarSVG}/>
+</div>
+
+<style>
+	.container {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.text {
+		width: max(calc(100% - 400px), 600px);
+	}
+
+	h1 {
+		font-size: 2rem;
+		width: fit-content;
+	}
+
+	p {
+		font-size: 1.15rem;
+	}
+</style>
